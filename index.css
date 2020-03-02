@@ -1,0 +1,348 @@
+    .container  {
+        max-width: 1199px;
+        margin: 0 auto;
+        height: 35px;
+        padding: 0 10px;
+    }
+    .container >.social_sites{
+        position: absolute;
+        right: 10%;
+    }
+    .social_sites>a{
+        display: inline-block;
+        height:20px;
+        width: 20px;
+        background: #163a43;
+        margin-top:10px;
+        margin-right: 5px;
+        text-align: center;
+    }
+    .social_sites > a i {
+        color: rgb(151, 140, 140);
+        font-size: 16px;
+    }
+    .social_sites > a:hover {
+        background: #163a43;
+        transition: 0.6s;
+    }
+    .social_sites > a:hover i {
+        color: rgb(223, 183, 183);
+        transition: 0.6s;
+        transform: scale(1.2);
+    }  
+    .container > ul li {
+        list-style-type: none;
+    }
+    .header__top-row {
+        background-color: #163a43;
+    }
+    body{
+        margin: 0;
+    }
+    header{
+        margin-top: 0px;
+        margin-left: auto;
+        font-family: Cuprum, Arial, Helvetica, sans-serif;
+    }
+
+    .menu{   
+        white-space: nowrap;
+        width: 100%;
+        height: 68px;
+        border-bottom: 1px solid rgb(141, 136, 136);
+    }
+    .dws-menu *{
+        background-color: rgb(243, 245, 248);
+        margin-top: 0px;
+        padding-top: 0px;
+        height:-40px;   
+        margin-left: 0px;
+    }
+    .dws-menu ul,
+    .dws-menu ol{
+        margin-left: 0px;
+        list-style: none;
+    }
+    .dws-menu > ul{
+        display: flex;
+        justify-content: center;
+    }
+    .dws-menu > ul li a{
+        display: block;
+        background: linear-gradient(top bottom,  rgba(201,201,201,1) 0%,rgba(246,246,246,1) 2%,rgba(196,197,199,1) 98%,rgba(117,117,119,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        padding: 25px;
+        font-size: 16px;
+        color: #454547;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        z-index: 4;
+    }
+    .dws-menu li a:hover{
+        background: #163a43;
+        color: #ffffff;
+        /*box-shadow: 1px 5px 10px -5px black;*/
+        transition: all 0.2s ease;
+    }
+    .fixed_menu{
+        z-index: 2;
+        position: fixed;
+        width: 100%;
+    }
+    .next1{
+        border:0px solid rgb(255, 255, 255);
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        height: 103px;
+        position: static;
+    }
+    .next{
+        position: static;
+        border: 0px solid;
+        padding: 0px;
+    }
+
+    /*************VIDEO*****************/
+    
+    .intro{
+        z-index: 1;
+        position: relative;
+    }
+    .intro:after{
+        width: 100%;
+        height: 100%;
+        content: "";
+        display: block;
+        background-color: rgba(36, 61, 61, 0.486);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+    .video_content{
+        position: relative;
+        padding-bottom: 56.25%;
+        margin-top: -240px;
+        
+    }
+    .video_pp{
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+
+
+      /*************VIDEO*****************/
+    .xd{
+        border:0px solid rgb(255, 255, 255);
+        background-color: rgb(243, 245, 248);
+        width: 600px;
+        height: 68px;
+    }
+    .main{
+        position: absolute;
+        border:1px solid #163a43;
+        background-color: #163a43;
+        width: 108px;
+        height: 2PX;
+        z-index: 5;
+        top: 93%;
+    }
+    .about_us{
+        position: absolute;
+        border:1px solid #163a43;
+        background-color: #163a43;
+        width: 108px;
+        height: 2PX;
+        z-index: 5;
+        top: 93%;
+    }
+    .galleries{
+        position: absolute;
+        border:1px solid #163a43;
+        background-color: #163a43;
+        width: 108px;
+        height: 2PX;
+        z-index: 5;
+        top: 93%;
+    }
+    .order{
+        position: absolute;
+        border:1px solid #163a43;
+        background-color: #163a43;
+        width: 160px;
+        height: 2PX;
+        z-index: 5;
+        top: 93%;
+    }
+    .line{
+        position: absolute;
+        border:1px solid #163a43;
+        background-color: #163a43;
+        width: 108px;
+        height: 2PX;
+        z-index: 5;
+        top: 93%;
+    }
+    .news{
+        position: absolute;
+        border:1px solid #163a43;
+        background-color: #163a43;
+        width: 103px;
+        height: 2PX;
+        z-index: 5;
+        top: 93%;
+    }
+    .news{
+        position: absolute;
+        border:1px solid #163a43;
+        background-color: #163a43;
+        width: 103px;
+        height: 2PX;
+        z-index: 5;
+        top: 93%;
+    }
+    .contact{
+        position: absolute;
+        border:1px solid #163a43;
+        background-color: #163a43;
+        width: 113px;
+        height: 2PX;
+        z-index: 5;
+        top: 93%;
+    }
+    section {
+    width: 100%;
+    }
+    .span1{
+        background-color: tomato;
+        text-align: center ;
+        text-emphasis-color: black;
+    }
+    h1 {
+        font-size: 48px;
+        color: #1d3a43;
+        display: inline-block;
+        padding: 20px 30px 20px 70px;
+        border-bottom: solid 2px #fff;
+        border-left: solid 2px #fff;
+        position: relative;
+        margin: 15px 10px 0;
+    }
+    h1::after {
+        background: url(H://furnituremsl.zzz.com.ua/MarkiyanM/img/dotred_white.png) right top no-repeat;
+        position: absolute;
+        width: 64px;
+        height: 25px;
+        content: "";
+        left: -1px;
+        top: -6px;
+    }
+    .text1{
+        white-space: nowrap;
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        z-index: 4;
+        color: #ffffff;
+        -webkit-animation-name: flipInX;
+        -webkit-backface-visibility: visible!important;
+        animation-name: flipInX;
+        backface-visibility: visible!important;
+    }
+    .text1_1{
+        background-color: rgba(107, 107, 107, 0.904);
+        text-align: center;
+        padding-top:10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+    }
+    .animated {
+        -webkit-animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes flipInX{
+    0% {
+        -webkit-animation-timing-function: ease-in;
+        -webkit-transform: perspective(400px) rotateX(90deg);
+        animation-timing-function: ease-in;
+        opacity: 0;
+        transform: perspective(400px) rotateX(90deg);
+    }
+
+    40% {
+        -webkit-animation-timing-function: ease-in;
+        -webkit-transform: perspective(400px) rotateX(-20deg);
+        animation-timing-function: ease-in;
+        transform: perspective(400px) rotateX(-20deg);
+    }
+
+    60% {
+        -webkit-transform: perspective(400px) rotateX(10deg);
+        opacity: 1;
+        transform: perspective(400px) rotateX(10deg);
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotateX(-5deg);
+        transform: perspective(400px) rotateX(-5deg);
+    }
+
+    100% {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px);
+    }
+    }
+    .text2{
+        margin: 0 auto;
+        width: 75%;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 2px solid rgb(136, 131, 131);
+        font-size: 40px;
+        color: rgb(41, 62, 63);
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+    .box2 {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+
+    .xbox{
+        white-space:nowrap;
+        padding-top: 40px;
+    }
+    .xbox1{
+        width:300px;
+        height: 500; 
+        display:inline-block;
+        border:1px solid black;
+        margin-left: 20px;
+
+    }
+    .xbox2{
+        width:300px;
+        height: 500; 
+        display:inline-block;
+        border:1px solid black;
+        margin-left: 20px;
+
+    }
+    .xbox3{
+        width:300px;
+        height: 500; 
+        display:inline-block;
+        border:1px solid black;
+        margin-left: 20px;
+    }
+
