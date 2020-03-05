@@ -238,7 +238,7 @@
         margin: 15px 10px 0;
     }
     h1::after {
-        background: url(H:/MarkiyanM/img/dotred_white.png) right top no-repeat;
+        background: url(/img/dotred_white.png) right top no-repeat;
         position: absolute;
         width: 64px;
         height: 25px;
@@ -507,7 +507,7 @@ img {
     vertical-align: middle;
 }
 .like {
-    background: url(H:/MarkiyanM/img/color.jpg) center;
+    background: url(/img/color.jpg) center;
     background-size: cover;
     height: 500px;
 }
@@ -550,7 +550,7 @@ element.style {
     display: none;
 }
 .cheap {
-    background: url(H:/MarkiyanM/img/fasad.jpg)center;
+    background: url(/img/fasad.jpg)center;
     background-size: cover;
     height: 550px;
 }
@@ -558,7 +558,7 @@ element.style {
     text-align: right;
 }
 .studio {
-    background: url(H:/MarkiyanM/img/studio.jpg) center;
+    background: url(/img/studio.jpg) center;
     background-size: cover;
     height: 500px;
 }
