@@ -15,7 +15,6 @@ function initMap() {
 	};
 
 	//E-mail Ajax Send
-	$(document).ready(function() {
 
 		//E-mail Ajax Send
 		$("form").submit(function() { //Change
@@ -34,4 +33,3 @@ function initMap() {
 			return false;
 		});
 	
-	});
