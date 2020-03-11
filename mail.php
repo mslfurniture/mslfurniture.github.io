@@ -5,7 +5,7 @@ $sitename = "MSL furniture";
 
 $name = trim($_POST["name"]);
 $phone = trim($_POST["phone"]);
-$textarea = trim($_POST["textarea"]);
+
 $message = "Имя: $name \nТелефон: $phone \nТекст: $textarea";
 
 $pagetitle = "Нова заявка з сайта \"$sitename\"";
