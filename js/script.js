@@ -17,17 +17,21 @@ function initMap() {
 
 	$(document).ready(function() {
 
-		$("#form").submit(function() {
+		//E-mail Ajax Send
+		$("form").submit(function() { //Change
+			var th = $(this);
 			$.ajax({
 				type: "POST",
-				url: "mail.php",
-				data: $(this).serialize()
+				url: "mail.php", //Change
+				data: th.serialize()
 			}).done(function() {
-				$(this).find("input").val("");
-				alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
-				$("#form").trigger("reset");
+				alert("Thank you!");
+				setTimeout(function() {
+					// Done Functions
+					th.trigger("reset");
+				}, 1000);
 			});
 			return false;
 		});
-		
+	
 	});
