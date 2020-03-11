@@ -20,7 +20,7 @@ function initMap() {
 		$("#form").submit(function() {
 			$.ajax({
 				type: "POST",
-				url: "/form.php",
+				url: "mail.php",
 				data: $(this).serialize()
 			}).done(function() {
 				$(this).find("input").val("");
