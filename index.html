@@ -4,7 +4,6 @@
         <script src="https://kit.fontawesome.com/603128dc44.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type=" text/css" href="/index.css"/>
         <meta http-equirv="Content-Type" content="text-htmf" charset="UTF-8"/>
-
     </head>
     <body> 
         <header class="ggg">
@@ -311,11 +310,32 @@
                 </div>
                 <div class="row">
                     <div class="form_sm" >
-                            <form class="form_s"  id="form" action="https://formspree.io/mknzwajl" method="POST">
-                              
-                                <input type="text" name="name">
-                                <input type="email" name="_replyto">
-                                <input type="submit" value="Send">
+                            <form class="form_s"  id="form">
+                                    <p>
+                                        <label> <p class="text12">Ваше ім'я (обов'язково)</p><br> 
+                                            <span class="-wrap your-name">
+                                                <input type="text" placeholder="Ім'я" name="name" value="" size="40" >
+                                            </span> 
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label > <p class="text12">Ваш телефон</p><br> 
+                                            <span class="-wrap your-phone">
+                                                <input type="text" placeholder="Мобільний телефон" name="phone" >
+                                            </span> 
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label ><p class="text12">Ваше повідомлення</p><br> 
+                                            <span>
+                                                <textarea name="textarea" placeholder="Ваше повідомлення" cols="40" rows="10"></textarea>
+                                            </span> 
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <input type="submit" value="Відправити" class=" wpcf7-submit">
+                                    </p>
+                                    </div>
                                 </form>
                             
                         </div>
@@ -410,28 +430,12 @@
 
 
 
-            <script>
-                
-                    $(document).ready(function() {
 
-                $("#form").submit(function() {
-                    $.ajax({
-                        type: "POST",
-                        url: "mail.php",
-                        data: $(this).serialize()
-                    }).done(function() {
-                        $(this).find("input").val("");
-                        alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
-                    });
-                    return false;
-                });
-
-                });
-                
-            </script>
             <script src="/js/script.js"></script>
             <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBckBDGGTd3kLkIE30MUOavKQek6sCVZeE&callback=initMap"
             async defer></script>
+            <script src="https://code.jquery.com/jquery-1.12.4.min.js"integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="crossorigin="anonymous"></script>
+
         </body>
     </html>
         

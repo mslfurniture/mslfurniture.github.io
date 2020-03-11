@@ -25,6 +25,7 @@ function initMap() {
 			}).done(function() {
 				$(this).find("input").val("");
 				alert("Спасибо за заявку! Скоро мы с вами свяжемся.");
+				$("#form").trigger("reset");
 			});
 			return false;
 		});
