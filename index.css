@@ -760,25 +760,22 @@ figure {
     color: black;
 }
 @media (min-width: 544px){
-.col-sm-67 {
+.form_sm {
     width: 40%;
 }}
 @media (min-width: 544px){
-.col-sm-67 {
+.form_sm {
     float: left;
 }}
 
-.col-sm-67{
+.form_sm{
     position: relative;
     min-height: 1px;
     padding-right: 140px;
     padding-left: .9375rem;
 }
 
-div.wpcf7 {
-    margin: 0;
-    padding: 0;
-}
+
 div.wpcf7 .screen-reader-response {
     position: absolute;
     overflow: hidden;
@@ -789,7 +786,7 @@ div.wpcf7 .screen-reader-response {
     padding: 0;
     border: 0;
 }
-.wpcf7-form {
+.form_s {
     text-transform: uppercase;
     font-size: 11px;
     letter-spacing: 2px;
@@ -824,9 +821,6 @@ button, input, select, textarea {
 label {
     display: inline-block;
     margin-bottom: .5rem;
-}
-.wpcf7-form-control-wrap {
-    position: relative;
 }
 textarea,input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
     padding: 10px;
@@ -938,18 +932,8 @@ input[type="reset"], input[type="submit"], input[type="submit"] {
     font-weight: 600;
     font-size: 13px;
 }
-div.wpcf7 .ajax-loader {
-    visibility: hidden;
-    display: inline-block;
-    background-image: url(../../images/ajax-loader.gif);
-    width: 16px;
-    height: 16px;
-    border: none;
-    padding: 0;
-    margin: 0 0 0 4px;
-    vertical-align: middle;
-}
-.wpcf7-form {
+
+.form_s {
     text-transform: uppercase;
     font-size: 11px;
     letter-spacing: 2px;
