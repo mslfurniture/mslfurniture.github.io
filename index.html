@@ -311,17 +311,12 @@
                 </div>
                 <div class="row">
                     <div class="form_sm" >
-                            <form class="form_s" id="form">
-                               <!-- Hidden Required Fields -->
-                                <input type="hidden" name="project_name" value="MSL furniture">
-                                <input type="hidden" name="admin_email" value="markiyan43@gmail.com">
-                                <input type="hidden" name="form_subject" value="Form">
-                                <!-- END Hidden Required Fields -->
+                            <form action="https://formspree.io/markiyan43@gmail.com" method="POST">
 
-                                <input type="text" name="Имя" value="Name" onfocus="this.value = '';"onblur="if(this.value == ''){this.value = 'Name ';}">
-                                <input type="text" name="E-mail" value="Email" onfocus="this.value = '';"onblur="if(this.value == ''){this.value = 'Email ';}">
-                                <textarea type="text" name="Повідомлення" value="Message" onfocus="this.value = '';"onblur="if(this.value == ''){this.value = 'Message ';}">Message</textarea>
-                                <input type="submit" value="SEND">
+                                <input type="text" name="name" placeholder="Ім'я">
+                                <input type="text" name="E-mail" placeholder="Ваша пошта">>
+                                <textarea type="text" name="textarea" placeholder="Ваше повідомлення" >Message</textarea>
+                                <button type="submit">Відправити</button>
                             </form>
                             
                             
