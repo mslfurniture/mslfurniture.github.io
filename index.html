@@ -312,8 +312,7 @@
                 <div class="row">
                     <div class="form_sm" >
                         
-                        
-                                <form action="https://formspree.io/myypyvlg" method="POST"class="form_s"  id="my-form">
+                                <form action="https://formspree.io/myypyvlg" method="POST"class="form_s"  id="form">
                                     <input type="hidden" name="_subject" value="Новий заказ!!!" />
 
                                     <p>
@@ -326,26 +325,26 @@
                                     <p>
                                         <label > <p class="text12">Ваш телефон</p><br> 
                                             
-                                                <input class="phone1" type="text"  name="Телефон" >
+                                                <input type="tel" placeholder="Мобільний телефон" name="Мобільний телефон" >
                                             
                                         </label>
                                     </p>
                                     <p>
                                         <label> <p class="text12">Електронна пошта</p><br> 
         
-                                                <input type="email" placeholder="E-mail" name="Пошта"  >
+                                                <input type="email" placeholder="E-mail" name="E-mail" >
                                              
                                         </label>
                                     </p>
                                     <p>
                                         <label ><p class="text12">Ваше повідомлення</p><br> 
                                         
-                                                <textarea name=Повідомлення" placeholder="Ваше повідомлення" cols="40" rows="10"></textarea>
+                                                <textarea name="Повідомлення" placeholder="Ваше повідомлення" cols="40" rows="10"></textarea>
                                              
                                         </label>
                                     </p>
                                     <p>
-                                        <button id="my-form-button">Submit</button>
+                                        <input id="my-form-button" type="submit" value="Відправити" class=" wpcf7-submit">
                                     </p>
                                     </div>
                                     <p id="my-form-status"></p>
@@ -442,16 +441,10 @@
             </div>
         </footer>
 
-            <script>
-                $('.phone1').mask("8(999) 999-9999",{
-                    autoclear:false,
-                });
-            </script>        
             <script src="/js/script.js"></script>
             <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBckBDGGTd3kLkIE30MUOavKQek6sCVZeE&callback=initMap"
             async defer></script>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-            <script src="/js/jquery.maskedinput.js" type="text/javascript"></script>
         </body>
     </html>
         
