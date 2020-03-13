@@ -29,7 +29,13 @@ function initMap() {
 			function success() {
 				form.reset();
 				button.style = "display: none ";
-				swal("Заявка успішно відправлена!", "Чекайте відповіді", "success");
+				Swal.fire({
+					position: 'top-end',
+					icon: 'success',
+					title: 'Your work has been saved',
+					showConfirmButton: false,
+					timer: 1500
+				  })
 			  }
 		  
 			  function error() {
