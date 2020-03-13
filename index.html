@@ -326,7 +326,7 @@
                             </p>
                             <p>
                             <label><p class="text12">Ваш телефон</p>
-                                <input type="text" placeholder="+38 (999) 99 99 999" name="phone" id="phone"  />
+                                <input type="text" class="form-control" id="phone" name="user_phone" placeholder="+7 (999) 99 99 999">
                             </label>
                             </p>
                             <p>
@@ -436,8 +436,13 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
-            <script src="/js/jquery.maskedinput.min.js"></script>
+            <script src="js/jquery.maskedinput.min.js"></script>
             <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <script>
+                $(document).ready(function() {
+                  $("#phone").mask("+7 (999) 99-99-999");
+                });
+              </script>
 
         </body>
     </html>
