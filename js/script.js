@@ -25,7 +25,9 @@ function initMap() {
 		var status = document.getElementById("my-form-status");
 	
 		// Success and Error functions for after the form is submitted
-	
+		button.addEventListener('click',function(){
+			swal("Good job!", "You clicked the button!", "success");
+		})
 		
 		function success() {
 		  form.reset();
