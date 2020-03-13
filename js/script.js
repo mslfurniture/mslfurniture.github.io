@@ -29,7 +29,7 @@ function initMap() {
 			function success() {
 				form.reset();
 				button.style = "display: none ";
-				swal("Заявка успішно відправленв=а!", "Чекайте відповіді", "success");
+				swal("Заявка успішно відправлена!", "Чекайте відповіді", "success");
 			  }
 		  
 			  function error() {
@@ -67,3 +67,6 @@ function initMap() {
 
 
 
+$(document).ready(function(){
+	$("#phone").mask("+38 (999) 99-99-999");
+});
