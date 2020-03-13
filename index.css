@@ -1164,14 +1164,13 @@ h2 {
     background: #03c4eb;
     border: none;
     display: inline-block;
+    width: 100%;
     color: #FFFFFF;
     letter-spacing: 1px;
     text-transform: uppercase;
     line-height: 1;
     text-align: center;
     padding: 15px 23px 15px 23px;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
     border-radius: 2px;
     box-shadow: 0 -1px 0 0 rgba(0, 0, 0, 0.1) inset;
     margin: 3px 0;
