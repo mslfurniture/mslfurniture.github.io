@@ -29,10 +29,10 @@ function initMap() {
 			function success() {
 				form.reset();
 				button.style = {
-					background: none,
+					background: #163a43,
 					border: none,
 					display: inline-block,
-					color: none,
+					color: #163a43
 				};
 				Swal.fire({
 					position: 'top-end',
