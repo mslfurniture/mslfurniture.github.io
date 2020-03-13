@@ -1160,8 +1160,7 @@ h2 {
     left: 200;
 }
 
-
-form > button{
+.button_s{
     cursor: pointer;
     background: #03c4eb;
     border: none;
