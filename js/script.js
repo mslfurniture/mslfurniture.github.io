@@ -27,10 +27,10 @@ function initMap() {
 		// Success and Error functions for after the form is submitted
 		
 		function success() {
-			button.addEventListener('click',function(){
+		button.addEventListener('click',function(){
 			swal("Good job!", "You clicked the button!", "success");
-		  });
-		  form.reset();
+		}),
+		form.reset();
 		  
 		}
 	
