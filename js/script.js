@@ -29,11 +29,9 @@ function initMap() {
 		function success() {
 		  form.reset();
 		  button.style = "display: none ";
-		  status.fire({
-			title: 'Error!',
-			text: 'Do you want to continue',
-			icon: 'error',
-			confirmButtonText: 'Cool'
+		  button.addEventListener('click',function(){
+			swal("Good job!", "You clicked the button!", "success");
+		  
 		  });
 		}
 	
