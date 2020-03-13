@@ -31,7 +31,6 @@ function initMap() {
 			swal("Good job!", "You clicked the button!", "success");
 		  });
 		  form.reset();
-		  button.style = "display: none ";
 		  
 		}
 	
