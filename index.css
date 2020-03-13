@@ -1161,7 +1161,7 @@ h2 {
 }
 
 
-button[type="submit"] {
+form > button{
     cursor: pointer;
     background: #03c4eb;
     border: none;
