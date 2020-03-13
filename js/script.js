@@ -66,6 +66,6 @@ function initMap() {
 
 	  $(function($){
 		
-		$(".phone1").mask("38(999) 999-9999");
+		$('.phone1').mask("38(999) 999-9999");
 	
 	 });
