@@ -67,6 +67,6 @@ function initMap() {
 
 
 
-	  $(document).ready(function() {
-		$("#phone").mask("+7 (999) 99-99-999");
-	  });
+$(document).ready(function(){
+	$("#phone").mask("(999) 999-9999");
+});
