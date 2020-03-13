@@ -26,27 +26,27 @@ function initMap() {
 	
 		// Success and Error functions for after the form is submitted
 		button.addEventListener('click',function(){
-			swal("Good job!", "You clicked the button!", "success");
+			function success() {
+				form.reset();
+				button.style = "display: none ";
+				swal("Заявка успішно відправленв=а!", "Чекайте відповіді", "success");
+			  }
+		  
+			  function error() {
+				swal("Ошибка!", "Перезагрузіть сторінку і попробуйте знову", "error");
+			  }
+		  
+			  // handle the form submission event
+		  
+			  form.addEventListener("submit", function(ev) {
+				ev.preventDefault();
+				var data = new FormData(form);
+				ajax(form.method, form.action, data, success, error);
+			  });
+			});
 		})
 		
-		function success() {
-		  form.reset();
-		  button.style = "display: none ";
-		  status.innerHTML = "Thanks!";
-		}
-	
-		function error() {
-		  status.innerHTML = "Oops! There was a problem.";
-		}
-	
-		// handle the form submission event
-	
-		form.addEventListener("submit", function(ev) {
-		  ev.preventDefault();
-		  var data = new FormData(form);
-		  ajax(form.method, form.action, data, success, error);
-		});
-	  });
+		
 	  
 	  // helper function for sending an AJAX request
 	
