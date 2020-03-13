@@ -29,7 +29,7 @@ function initMap() {
 		function success() {
 		  form.reset();
 		  button.style = "display: none ";
-		  status.innerHTML =alert("Вашу заявку надіслано. Чекайте відповіді") ;
+		  status.innerHTML = "Thanks!";
 		}
 	
 		function error() {
