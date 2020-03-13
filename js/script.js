@@ -62,3 +62,8 @@ function initMap() {
 		xhr.send(data);
 	  }
 
+	  function($){
+		
+		$(".phone1").mask("38(999)-999-9999");
+	
+	 });
