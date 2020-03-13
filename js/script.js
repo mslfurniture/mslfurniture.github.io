@@ -67,6 +67,6 @@ function initMap() {
 
 
 
-$(document).ready(function(){
-	$("#phone").mask("(999) 999-9999");
-});
+	  $(document).ready(function() {
+		$("#phone").mask("+38 (098) 79-95-532");
+	  });
