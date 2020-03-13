@@ -28,7 +28,12 @@ function initMap() {
 		button.addEventListener('click',function(){
 			function success() {
 				form.reset();
-				button.style = "display: none ";
+				button.style = {
+					background: none,
+					border: none,
+					display: inline-block,
+					color: none,
+				};
 				Swal.fire({
 					position: 'top-end',
 					icon: 'success',
