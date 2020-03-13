@@ -312,43 +312,17 @@
                 <div class="row">
                     <div class="form_sm" >
                         
-                                <form action="https://formspree.io/myypyvlg" method="POST"class="form_s"  id="my_form">
-                                    <input type="hidden" name="_subject" value="Новий заказ!!!" />
-
-                                    <p>
-                                        <label> <p class="text12">Ваше ім'я (обов'язково)</p><br> 
-        
-                                                <input type="text" placeholder="Ім'я" name="Ім'я"  >
-                                             
-                                        </label>
-                                    </p>
-                                    <p>
-                                        <label > <p class="text12">Ваш телефон</p><br> 
-                                            
-                                                <input type="text" placeholder="Мобільний телефон" name="Мобільний телефон" >
-                                            
-                                        </label>
-                                    </p>
-                                    <p>
-                                        <label> <p class="text12">Електронна пошта</p><br> 
-        
-                                                <input type="email" placeholder="E-mail" name="E-mail" >
-                                             
-                                        </label>
-                                    </p>
-                                    <p>
-                                        <label ><p class="text12">Ваше повідомлення</p><br> 
-                                        
-                                                <textarea name="Повідомлення" placeholder="Ваше повідомлення" cols="40" rows="10"></textarea>
-                                             
-                                        </label>
-                                    </p>
-                                    <p>
-                                        <input id="my-form-button" type="submit" value="Відправити">
-                                    </p>
-                                    </div>
-                                    <p id="my-form-status"></p>
-                                </form>
+                        <form id="my-form"
+                        action="https://formspree.io/myypyvlg"
+                        method="POST"
+                      >
+                        <label>Email:</label>
+                        <input type="email" name="email" />
+                        <label>Message:</label>
+                        <input type="text" name="message" />
+                        <button id="my-form-button">Submit</button>
+                        <p id="my-form-status"></p>
+                      </form>
                             
                             
                         </div>
