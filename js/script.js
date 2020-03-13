@@ -32,15 +32,20 @@ function initMap() {
 				Swal.fire({
 					position: 'top-end',
 					icon: 'success',
-					title: 'Your work has been saved',
+					title: 'Дякуємо за Ваше повідомлення. Воно було відправлено.',
 					showConfirmButton: false,
 					timer: 1500
 				  })
 			  }
 		  
 			  function error() {
-				swal("Ошибка!", "Перезагрузіть сторінку і попробуйте знову", "error");
-			  }
+				Swal.fire({
+					position: 'top-end',
+					icon: 'success',
+					title: 'Перезагрузіть сторінку і попробуйте знову.',
+					showConfirmButton: false,
+					timer: 1500
+				  })			  }
 		  
 			  // handle the form submission event
 		  
