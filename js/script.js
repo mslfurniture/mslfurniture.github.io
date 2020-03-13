@@ -28,12 +28,7 @@ function initMap() {
 		button.addEventListener('click',function(){
 			function success() {
 				form.reset();
-				button.style = {
-					background: '#163a43',
-					border: none,
-					display: inline-block,
-					color: '#163a43'
-				};
+				button.style = "display: none ";
 				Swal.fire({
 					position: 'top-end',
 					icon: 'success',
