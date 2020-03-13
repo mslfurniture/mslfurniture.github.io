@@ -29,7 +29,12 @@ function initMap() {
 		function success() {
 		  form.reset();
 		  button.style = "display: none ";
-		  status.innerHTML = alert("fgdfgfg");
+		  status.fire({
+			title: 'Error!',
+			text: 'Do you want to continue',
+			icon: 'error',
+			confirmButtonText: 'Cool'
+		  });
 		}
 	
 		function error() {
