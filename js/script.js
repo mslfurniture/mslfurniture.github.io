@@ -1,6 +1,3 @@
-$(document).ready(function() {
-	$("#phone").mask("+7 (999) 99-99-999");
-  });	
 function initMap() {
 	var pos = {lat:49.868311,lng: 24.047712};
 	var opt={
