@@ -29,8 +29,9 @@ function initMap() {
 		function success() {
 		button.addEventListener('click',function(){
 			swal("Good job!", "You clicked the button!", "success");
-		}),
-		form.reset();
+			form.reset();
+		});
+		
 		  
 		}
 	
