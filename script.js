@@ -29,12 +29,24 @@ function initMap() {
 		function success() {
 		  form.reset();
 		  button.style = "display: none ";
-		  status.innerHTML = "Thanks!";
+		  Swal.fire({
+			position: 'top-end',
+			icon: 'success',
+			title: 'Дякуємо за Ваше повідомлення. Воно було відправлено.',
+			showConfirmButton: false,
+			timer: 1500
+			});
 		}
 		
 		function error() {
-			status.innerHTML = "Tdsadsadsadsahanks!";			
-		}});
+			Swal.fire({
+				position: 'top-end',
+				icon: 'success',
+				title: 'Перезагрузіть сторінку і попробуйте знову.',
+				showConfirmButton: false,
+				timer: 1500
+			});	
+		}
 		
 		// handle the form submission event
 		
@@ -45,6 +57,7 @@ function initMap() {
 		  ajax(form.method, form.action, data, success, error);
 		});
 		});
+	});
 		
 		// helper function for sending an AJAX request
 		
