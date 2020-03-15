@@ -57,7 +57,7 @@ function initMap() {
 		  ajax(form.method, form.action, data, success, error);
 		});
 		});
-	});
+	
 		
 		// helper function for sending an AJAX request
 		
@@ -75,3 +75,4 @@ function initMap() {
 		};
 		xhr.send(data);
 		}
+	});
