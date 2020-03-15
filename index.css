@@ -910,7 +910,7 @@ div.wpcf7-validation-errors {
     line-height: 2;
 }   
 .section-contact textarea {
-    max-height: 190px;
+    max-height: 135px;
 }
 input[type="reset"], input[type="submit"], input[type="submit"] {
     cursor: pointer;
