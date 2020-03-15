@@ -44,7 +44,7 @@ function initMap() {
 				icon: 'success',
 				title: 'Перезагрузіть сторінку і попробуйте знову.',
 				showConfirmButton: false,
-				timer: 2500
+				timer: 1500
 			});			
 		}
 		
