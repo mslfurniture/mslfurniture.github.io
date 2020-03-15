@@ -34,7 +34,7 @@ function initMap() {
 			icon: 'success',
 			title: 'Дякуємо за Ваше повідомлення. Воно було відправлено.',
 			showConfirmButton: false,
-			timer: 1500
+			timer: 2500
 			});
 		}
 		
@@ -44,7 +44,7 @@ function initMap() {
 				icon: 'success',
 				title: 'Перезагрузіть сторінку і попробуйте знову.',
 				showConfirmButton: false,
-				timer: 1500
+				timer: 2500
 			});	
 		}
 		
