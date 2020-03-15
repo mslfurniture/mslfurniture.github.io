@@ -36,7 +36,7 @@ function initMap() {
 			showConfirmButton: false,
 			timer: 1500
 		});
-		}}
+		}
 		
 		function error() {
 			Swal.fire({
@@ -46,7 +46,7 @@ function initMap() {
 				showConfirmButton: false,
 				timer: 1500
 			});			
-		});
+		}});
 		
 		// handle the form submission event
 		
