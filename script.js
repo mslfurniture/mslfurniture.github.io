@@ -25,15 +25,27 @@ function initMap() {
 		
 		
 		// Success and Error functions for after the form is submitted
-		
+		button.addEventListener('click',function(){
 		function success() {
 		  form.reset();
 		  button.style = "display: none ";
-		  status.innerHTML = "Thanks!";
+		  Swal.fire({
+			position: 'top-end',
+			icon: 'success',
+			title: 'Дякуємо за Ваше повідомлення. Воно було відправлено.',
+			showConfirmButton: false,
+			timer: 1500
+		});
 		}
 		
 		function error() {
-		  status.innerHTML = "Oops! There was a problem.";
+			Swal.fire({
+				position: 'top-end',
+				icon: 'success',
+				title: 'Перезагрузіть сторінку і попробуйте знову.',
+				showConfirmButton: false,
+				timer: 2500
+			});			
 		}
 		
 		// handle the form submission event
