@@ -23,42 +23,18 @@ function initMap() {
 		var form = document.getElementById("my-form");
 		var button = document.getElementById("my-form-button");
 		var status = document.getElementById("my-form-status");
-		var button_head = document.getElementById("button");+
-
-		button.addEventListener('click',function(){
-			function success() {
-				form.reset();
-				button.style = "display: none ";
-				Swal.fire({
-					position: 'top-end',
-					icon: 'success',
-					title: 'Дякуємо за Ваше повідомлення. Воно було відправлено.',
-					showConfirmButton: false,
-					timer: 1500
-				  })
-			}
+	
 		// Success and Error functions for after the form is submitted
 		button.addEventListener('click',function(){
 			function success() {
 				form.reset();
 				button.style = "display: none ";
-				Swal.fire({
-					position: 'top-end',
-					icon: 'success',
-					title: 'Дякуємо за Ваше повідомлення. Воно було відправлено.',
-					showConfirmButton: false,
-					timer: 1500
-				  })
+				swal("Заявка успішно відправлена!", "Чекайте відповіді", "success");
 			  }
 		  
 			  function error() {
-				Swal.fire({
-					position: 'top-end',
-					icon: 'success',
-					title: 'Перезагрузіть сторінку і попробуйте знову.',
-					showConfirmButton: false,
-					timer: 2500
-				  })			  }
+				swal("Ошибка!", "Перезагрузіть сторінку і попробуйте знову", "error");
+			  }
 		  
 			  // handle the form submission event
 		  
@@ -88,4 +64,9 @@ function initMap() {
 		};
 		xhr.send(data);
 	  }
-	});
+
+
+
+$(document).ready(function(){
+	$("#phone").mask("(999) 999-9999");
+});
