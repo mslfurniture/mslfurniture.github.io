@@ -35,7 +35,7 @@ function initMap() {
 			title: 'Дякуємо за Ваше повідомлення. Воно було відправлено.',
 			showConfirmButton: false,
 			timer: 1500
-		});
+			})
 		}
 		
 		function error() {
@@ -45,12 +45,17 @@ function initMap() {
 				title: 'Перезагрузіть сторінку і попробуйте знову.',
 				showConfirmButton: false,
 				timer: 1500
-			});			
+			})			
 		}});
 		
 		// handle the form submission event
 		
-
+		form.addEventListener("submit", function(ev) {
+		  ev.preventDefault();
+		  var data = new FormData(form);
+		  
+		  ajax(form.method, form.action, data, success, error);
+		});
 		});
 		
 		// helper function for sending an AJAX request
