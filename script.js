@@ -29,23 +29,11 @@ function initMap() {
 		function success() {
 		  form.reset();
 		  button.style = "display: none ";
-		  Swal.fire({
-			position: 'top-end',
-			icon: 'success',
-			title: 'Дякуємо за Ваше повідомлення. Воно було відправлено.',
-			showConfirmButton: false,
-			timer: 1500
-			})
+		  status.innerHTML = "Thanks!";
 		}
 		
 		function error() {
-			Swal.fire({
-				position: 'top-end',
-				icon: 'success',
-				title: 'Перезагрузіть сторінку і попробуйте знову.',
-				showConfirmButton: false,
-				timer: 1500
-			})			
+			status.innerHTML = "Tdsadsadsadsahanks!";			
 		}});
 		
 		// handle the form submission event
@@ -53,8 +41,8 @@ function initMap() {
 		form.addEventListener("submit", function(ev) {
 		  ev.preventDefault();
 		  var data = new FormData(form);
-
-		  ajax(form.method, form.action, data, this.click);
+		  
+		  ajax(form.method, form.action, data, success, error);
 		});
 		});
 		
