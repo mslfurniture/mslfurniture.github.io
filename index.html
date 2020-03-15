@@ -313,17 +313,33 @@
                 </div>
                 <div class="row">
                     <div class="form_sm" >
-                        <form id="my-form"
-                        action="https://formspree.io/xnqzpldq"
-                        method="POST"
-                      >
-                        <label>Email:</label>
-                        <input type="email" name="email" />
-                        <label>Message:</label>
-                        <input type="text" name="message" />
-                        <button id="my-form-button">Submittttt</button>
-                        <p id="my-form-status"></p>
-                      </form>
+                        <form id="my-form" action="https://formspree.io/xnqzpldq" method="POST" class="form_s">
+                            
+                            <input type="hidden" name="_subject" value="Новий заказ!!!" />
+                            <p>
+                            <label><p class="text12">Ваше ім'я (обов'язково)</p>
+                                <input type="text" placeholder="Ім'я" name="Ім'я клієнта"/>
+                            </label>
+                            </p>
+                            <p>
+                            <label><p class="text12">Електронна пошта</p>
+                                <input type="email" name="E-mail клієнта"placeholder="E-mail"/>
+                            </label>
+                            </p>
+                            <p>
+                            <label><p class="text12">Ваш телефон</p>
+                                <input type="tel" id="phone" name="Номер клієнта" placeholder="+38 (050) 889 99 99">
+                            </label>
+                            </p>
+                            <p>
+                            <label><p class="text12">Ваше повідомлення</p>
+                                <textarea type="text" name="Повідомлення клієнта" placeholder="Ваше повідомлення" cols="40" rows="10"></textarea>
+                            </label>
+                            </p>
+                            <button id="my-form-button" class="button_s">Відправити</button>
+				            <p id="my-form-status"></p>
+
+                        </form>
                          
                             
                         </div>
