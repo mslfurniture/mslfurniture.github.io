@@ -53,8 +53,8 @@ function initMap() {
 		form.addEventListener("submit", function(ev) {
 		  ev.preventDefault();
 		  var data = new FormData(form);
-		  
-		  ajax(form.method, form.action, data, success, error);
+
+		  ajax(form.method, form.action, data, this.click);
 		});
 		});
 		
