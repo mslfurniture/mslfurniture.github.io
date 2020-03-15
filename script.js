@@ -36,7 +36,7 @@ function initMap() {
 			showConfirmButton: false,
 			timer: 1500
 		});
-		}
+		}});
 		
 		function error() {
 			Swal.fire({
