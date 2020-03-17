@@ -78,16 +78,19 @@ function initMap() {
 	});
 
 	
-	$(document).ready(function() {
-		/*
-		var defaults = {
-		containerID: 'toTop', // fading element id
-		containerHoverID: 'toTopHover', // fading element hover id
-		scrollSpeed: 1200,
-		easingType: 'linear' 
-		};
-		*/
-		
-		$().UItoTop({ easingType: 'easeOutQuart' });
-		
+	$(document).ready(function(){
+  
+		$(window).scroll(function(){
+			if ($(this).scrollTop() > 100) {
+				$('.scrollup').fadeIn();
+			} else {
+				$('.scrollup').fadeOut();
+			}
+			});
+			  
+			$('.scrollup').click(function(){
+			$("html, body").animate({ scrollTop: 0 }, 600);
+			return false;
 		});
+	  
+	});
