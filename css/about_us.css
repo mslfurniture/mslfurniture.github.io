@@ -605,3 +605,17 @@ section {
         top:5;
         left: 200;
     }
+
+    .scrollup{
+        z-index: 10000;
+        width:50px;
+        height:50px;
+        opacity:0.4;
+        position:fixed;
+        bottom:50px;
+        right:50px;
+        display:none;
+        text-indent:-9999px;
+        background: url('img/up.png') no-repeat;
+    }
+    
